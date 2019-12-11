@@ -51,7 +51,7 @@ function charts_draw(sample) {
   
       Plotly.newPlot("bubble", bubble_data, bubble_format);
   
-      var yticks = otu_ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
+      var yticks = ids.slice(0, 10).map(otuID => `OTU ${otuID}`).reverse();
       var bar_data = [
         {
           y: yticks,
