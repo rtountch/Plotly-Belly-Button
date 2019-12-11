@@ -67,7 +67,7 @@ function charts_draw(sample) {
         margin: { t: 30, l: 150 }
       };
   
-      Plotly.newPlot("bar", barData, barLayout);
+      Plotly.newPlot("bar", bar_data, bar_format);
     });
   }
   
