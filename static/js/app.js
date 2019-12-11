@@ -55,7 +55,7 @@ function charts_draw(sample) {
       var bar_data = [
         {
           y: yticks,
-          x: sample_values.slice(0, 10).reverse(),
+          x: values.slice(0, 10).reverse(),
           text: otu_labels.slice(0, 10).reverse(),
           type: "bar",
           orientation: "h",
@@ -94,6 +94,11 @@ function init() {
     metadata_create(first);
   });
 
+}
+
+function optionsChanged(data) {
+  charts_draw(data);
+  metadata_create(data);
 }
 
 init();
