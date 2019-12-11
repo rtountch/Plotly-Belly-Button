@@ -56,7 +56,7 @@ function charts_draw(sample) {
         {
           y: yticks,
           x: values.slice(0, 10).reverse(),
-          text: otu_labels.slice(0, 10).reverse(),
+          text: labels.slice(0, 10).reverse(),
           type: "bar",
           orientation: "h",
         }
