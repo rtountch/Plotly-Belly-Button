@@ -96,7 +96,7 @@ function init() {
 
 }
 
-function optionsChanged(data) {
+function optionChanged(data) {
   charts_draw(data);
   metadata_create(data);
 }
